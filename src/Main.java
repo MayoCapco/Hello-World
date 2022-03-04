@@ -41,7 +41,7 @@ public class Main {
                     double width=0;
                     double height=0;
 
-                    // Room dimensions are in meters
+                    // Room dimensions are in feet
                     ////////////////////////////////////////////////////////////////
 
                     System.out.println();
@@ -92,6 +92,7 @@ public class Main {
                     choice=true;
 
                     // Surface area of wall
+                    // Refer to this link: https://www.teachoo.com/9374/2122/Ex-11.3--5/category/Ex-11.3/
                     double surfaceAreaWall=2*((length*width)+(width*height)*(height*length));
 
                     wallAreas.add(surfaceAreaWall);
@@ -176,7 +177,6 @@ public class Main {
                     }
                 }
             }
-
         }
 
         catch(Exception e){
