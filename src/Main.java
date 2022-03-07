@@ -55,7 +55,7 @@ public class Main {
                             choice=false;
                         }
                         catch(NumberFormatException e){
-                            System.out.println("Enter a valid numerical input: ");
+                            System.out.print("Enter a valid numerical input: ");
                         }
                     }
 
@@ -71,7 +71,7 @@ public class Main {
                             choice=false;
                         }
                         catch(NumberFormatException e){
-                            System.out.println("Enter a valid numerical input: ");
+                            System.out.print("Enter a valid numerical input: ");
                         }
                     }
 
@@ -87,7 +87,7 @@ public class Main {
                             choice=false;
                         }
                         catch(NumberFormatException e){
-                            System.out.println("Enter a valid numerical input: ");
+                            System.out.print("Enter a valid numerical input: ");
                         }
                     }
 
@@ -114,7 +114,7 @@ public class Main {
                         choice=false;
                     }
                     catch(NumberFormatException e){
-                        System.out.println("Enter a valid numerical input: ");
+                        System.out.print("Enter a valid numerical input: ");
                     }
                 }
 
