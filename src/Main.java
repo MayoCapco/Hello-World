@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Main {
     public static void main(String[] args) throws Exception{
@@ -35,7 +36,8 @@ public class Main {
 
                 choice=true;
 
-                ArrayList<Double> wallAreas=new ArrayList<>();
+                HashMap<Integer, Double> wallAreas=new HashMap<>();
+
                 for(int i=0; i<numOfWalls; i++){
                     double length=0;
                     double width=0;
@@ -93,9 +95,9 @@ public class Main {
 
                     // Surface area of wall
                     // Refer to this link: https://www.teachoo.com/9374/2122/Ex-11.3--5/category/Ex-11.3/
-                    double surfaceAreaWall=2*((length*width)+(width*height)*(height*length));
+                    double surfaceAreaWall=2*((length*width)+(width*height)+(height*length));
 
-                    wallAreas.add(surfaceAreaWall);
+                    wallAreas.put(i+1, surfaceAreaWall);
                 }
 
                 // Assume that a gallon of paint can paint 400 square feet of wall
@@ -121,7 +123,7 @@ public class Main {
                 double paintSquareFeetCoverage=paintgallons*gallonPerSquareFeet;
                 double totalArea=0;
 
-                for(Double x: wallAreas){
+                for(Double x: wallAreas.values()){
                     totalArea+=x;
                 }
 
@@ -145,7 +147,8 @@ public class Main {
 
                 System.out.println();
                 int i=0;
-                for(Double x: wallAreas){
+
+                for(Double x: wallAreas.values()){
                     i+=1;
                     System.out.println("Area of wall "+i+" is "+x+" ft^2");
                 }
