@@ -1,4 +1,4 @@
-package my.oop;
+package my.oop.text;
 
 public class Minesweeper {
     private int width;
@@ -77,8 +77,6 @@ public class Minesweeper {
             }
             System.out.println();
         }
-
-
         System.out.println();
     }
 

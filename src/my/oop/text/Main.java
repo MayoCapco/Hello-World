@@ -1,4 +1,4 @@
-package my.oop;
+package my.oop.text;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
