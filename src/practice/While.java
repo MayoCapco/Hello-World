@@ -1,3 +1,5 @@
+package practice;
+
 public class While {
     public static void main(String[] args) throws Exception{
         int i=5;
