@@ -1,4 +1,4 @@
-package my.oop.gui;
+package practice;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -7,8 +7,6 @@ import java.awt.event.ActionListener;
 /*
 Tutorial:
 https://www.youtube.com/watch?v=aIdIXsi1qTU
-
-
  */
 public class MainFrame extends JFrame{
     private JTextField tfFirstName;

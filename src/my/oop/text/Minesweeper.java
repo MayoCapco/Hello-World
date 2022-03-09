@@ -148,7 +148,7 @@ public class Minesweeper {
     public void getGameResult(){
         // Win: All mines and non-mines are uncovered
         if(uncovered_positions>=(width*height-mines)) {
-            System.out.println("YOU WIN! YOU HAVE UNCOVERED ALL THE MINES AND SAFEZONES!");
+            System.out.println("YOU WIN! YOU HAVE NOT TOUCHED ANY MINES!");
         }
         // Lose: Some non-mines were left uncovered. Mines are uncovered.
         // GameEnd status will not be changed.
